@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Blue hider",
+  "version": "1.0.0",
+  "description": "Simply hides the Twitter Blue button on twitter, makes the UI nicer on a smaller screens.",
+  "icons": {
+    "16": "twitter.png",
+    "48": "twitter.png",
+    "128": "twitter.png"
+  },
+  "action": {
+    "default_icons": {
+      "16": "twitter.png",
+      "48": "twitter.png",
+      "128": "twitter.png"
+    },
+    "default_title": "Twitter Blue hider"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "css": ["twitter.css"]
+    }
+  ]
+}
